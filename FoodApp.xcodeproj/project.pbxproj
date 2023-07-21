@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		7149BD9B2A6A5E7C00A36A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */; };
 		7149BD9D2A6A5E7C00A36A0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */; };
-		7149BD9F2A6A5E7C00A36A0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BD9E2A6A5E7C00A36A0E /* ViewController.swift */; };
 		7149BDA22A6A5E7C00A36A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7149BDA02A6A5E7C00A36A0E /* Main.storyboard */; };
 		7149BDA42A6A5E7D00A36A0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7149BDA32A6A5E7D00A36A0E /* Assets.xcassets */; };
 		7149BDA72A6A5E7D00A36A0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7149BDA52A6A5E7D00A36A0E /* LaunchScreen.storyboard */; };
+		7149BDB42A6A634A00A36A0E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BDB32A6A634A00A36A0E /* OnboardingViewController.swift */; };
+		7149BDB72A6A673000A36A0E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BDB62A6A673000A36A0E /* UIView+Extension.swift */; };
+		7149BDB92A6A68B900A36A0E /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BDB82A6A68B900A36A0E /* OnboardingSlide.swift */; };
+		7149BDBB2A6A6C7300A36A0E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BDBA2A6A6C7300A36A0E /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7149BD972A6A5E7C00A36A0E /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7149BD9E2A6A5E7C00A36A0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7149BDA12A6A5E7C00A36A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7149BDA32A6A5E7D00A36A0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7149BDA62A6A5E7D00A36A0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7149BDA82A6A5E7D00A36A0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7149BDB32A6A634A00A36A0E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		7149BDB62A6A673000A36A0E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7149BDB82A6A68B900A36A0E /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		7149BDBA2A6A6C7300A36A0E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		7149BD992A6A5E7C00A36A0E /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				7149BDB52A6A669400A36A0E /* Extensions */,
+				7149BDAF2A6A62BE00A36A0E /* Views */,
+				7149BDAE2A6A62AA00A36A0E /* Modals */,
 				7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */,
 				7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */,
-				7149BD9E2A6A5E7C00A36A0E /* ViewController.swift */,
 				7149BDA02A6A5E7C00A36A0E /* Main.storyboard */,
-				7149BDA32A6A5E7D00A36A0E /* Assets.xcassets */,
 				7149BDA52A6A5E7D00A36A0E /* LaunchScreen.storyboard */,
+				7149BDA32A6A5E7D00A36A0E /* Assets.xcassets */,
 				7149BDA82A6A5E7D00A36A0E /* Info.plist */,
 			);
 			path = FoodApp;
+			sourceTree = "<group>";
+		};
+		7149BDAE2A6A62AA00A36A0E /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				7149BDB82A6A68B900A36A0E /* OnboardingSlide.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		7149BDAF2A6A62BE00A36A0E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7149BDB02A6A62D500A36A0E /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7149BDB02A6A62D500A36A0E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7149BDB32A6A634A00A36A0E /* OnboardingViewController.swift */,
+				7149BDBA2A6A6C7300A36A0E /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		7149BDB52A6A669400A36A0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7149BDB62A6A673000A36A0E /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7149BD9F2A6A5E7C00A36A0E /* ViewController.swift in Sources */,
+				7149BDB92A6A68B900A36A0E /* OnboardingSlide.swift in Sources */,
 				7149BD9B2A6A5E7C00A36A0E /* AppDelegate.swift in Sources */,
 				7149BD9D2A6A5E7C00A36A0E /* SceneDelegate.swift in Sources */,
+				7149BDB72A6A673000A36A0E /* UIView+Extension.swift in Sources */,
+				7149BDB42A6A634A00A36A0E /* OnboardingViewController.swift in Sources */,
+				7149BDBB2A6A6C7300A36A0E /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
