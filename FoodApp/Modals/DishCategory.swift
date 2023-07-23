@@ -7,8 +7,14 @@
 
 import Foundation
 
-struct DishCategory {
-    let id: String
-    let name: String
-    let image: String
+struct DishCategory: Codable {
+    let id: String?
+    let name: String?
+    let image: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name = "title"
+        case image
+    }
 }
