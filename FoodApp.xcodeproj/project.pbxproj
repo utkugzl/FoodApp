@@ -27,6 +27,7 @@
 		710AE61D2A6D4155007B6FF5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AE61C2A6D4155007B6FF5 /* AppError.swift */; };
 		710AE61F2A6D4AF0007B6FF5 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AE61E2A6D4AF0007B6FF5 /* ApiResponse.swift */; };
 		710AE6212A6D5EC7007B6FF5 /* AllDishes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AE6202A6D5EC7007B6FF5 /* AllDishes.swift */; };
+		710AE6252A6DCCF3007B6FF5 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710AE6242A6DCCF3007B6FF5 /* UserDefaults+Extension.swift */; };
 		7149BD9B2A6A5E7C00A36A0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */; };
 		7149BD9D2A6A5E7C00A36A0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */; };
 		7149BDA22A6A5E7C00A36A0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7149BDA02A6A5E7C00A36A0E /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 		710AE61C2A6D4155007B6FF5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		710AE61E2A6D4AF0007B6FF5 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		710AE6202A6D5EC7007B6FF5 /* AllDishes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDishes.swift; sourceTree = "<group>"; };
+		710AE6242A6DCCF3007B6FF5 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		7149BD972A6A5E7C00A36A0E /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,15 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		710AE6262A6DD1D6007B6FF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */,
+				7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7149BD8E2A6A5E7C00A36A0E = {
 			isa = PBXGroup;
 			children = (
@@ -204,13 +215,12 @@
 		7149BD992A6A5E7C00A36A0E /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				710AE6262A6DD1D6007B6FF5 /* Resources */,
 				710AE6152A6D33FF007B6FF5 /* Networking */,
 				7149BDB52A6A669400A36A0E /* Extensions */,
 				7149BDBF2A6BB3D100A36A0E /* CustomViews */,
 				7149BDAF2A6A62BE00A36A0E /* Views */,
 				7149BDAE2A6A62AA00A36A0E /* Modals */,
-				7149BD9A2A6A5E7C00A36A0E /* AppDelegate.swift */,
-				7149BD9C2A6A5E7C00A36A0E /* SceneDelegate.swift */,
 				7149BDA02A6A5E7C00A36A0E /* Main.storyboard */,
 				7149BDA52A6A5E7D00A36A0E /* LaunchScreen.storyboard */,
 				7149BDA32A6A5E7D00A36A0E /* Assets.xcassets */,
@@ -258,6 +268,7 @@
 				7149BDB62A6A673000A36A0E /* UIView+Extension.swift */,
 				710AE5F02A6BBB4B007B6FF5 /* String+Extension.swift */,
 				710AE6042A6C3615007B6FF5 /* UIViewController+Extension.swift */,
+				710AE6242A6DCCF3007B6FF5 /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -452,6 +463,7 @@
 				710AE61D2A6D4155007B6FF5 /* AppError.swift in Sources */,
 				710AE5F82A6BD355007B6FF5 /* DishCollectionViewCell.swift in Sources */,
 				710AE5FB2A6BD578007B6FF5 /* Dish.swift in Sources */,
+				710AE6252A6DCCF3007B6FF5 /* UserDefaults+Extension.swift in Sources */,
 				7149BDBB2A6A6C7300A36A0E /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

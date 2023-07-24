@@ -26,6 +26,7 @@ struct NetworkManager {
         request(route: .fetchCategoryDishes(categoryID), method: .get, completion: completion)
     }
     
+    
     func fetchOrders(completion: @escaping (Result<[Order],Error>) -> Void) {
         request(route: .fetchOrders, method: .get, completion: completion)
     }

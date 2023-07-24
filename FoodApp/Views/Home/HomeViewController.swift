@@ -36,6 +36,7 @@ class HomeViewController: UIViewController {
         
         ProgressHUD.show()
         ProgressHUD.animationType = .circleRotateChase
+        ProgressHUD.colorAnimation = UIColor(named: "redColor") ?? .darkGray
         NetworkManager.shared.fetchAllCategories { [weak self] result in
             switch result {
             case .success(let allDishes):
